@@ -1,4 +1,9 @@
 @import url('./../../public/css/partials/_reset.css');
+@import url('./../../public/css/partials/_variables.css');
+
+:root {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
 
 .container {
     width: 1100px;
@@ -43,3 +48,39 @@ header .container {
         border-bottom: 1em solid #0282f9ff;
     }
 }
+
+main {
+    background-color: #1c1c1cff;
+    color: white;
+    text-align: center;
+    padding-bottom: 1em;
+    #jumbotron {
+      height: 400px;
+      background-image: url("./../../public/images/jumbotron.jpg");
+      background-position-x: center;
+    }
+    .container {
+      position: relative;
+      padding-top: 2.5em;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      gap: 1em;
+    }
+    #etichetta {
+      background-color: var(--blue);
+      font-size: 1.2rem;
+      padding: 0.5em 1.5em;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateY(-50%);
+    }
+    button {
+      border: none;
+      background-color: var(--blue);
+      padding: 0.7em;
+      color: white;
+      width: 150px;
+      cursor: pointer;
+    }
+  }
