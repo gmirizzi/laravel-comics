@@ -1,6 +1,5 @@
-@include('template.layout')
-<main>
-    <div id="jumbotron"></div>
+@extends('template.layout')
+@section('content')
     <div class="container">
       <div id="etichetta">CURRENT SERIES</div>
       {{-- <CardSerie
@@ -11,4 +10,4 @@
       /> --}}
     </div>
     <button>LOAD MORE</button>
-  </main>
+@endsection
