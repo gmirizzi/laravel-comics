@@ -3,8 +3,8 @@
       <img src="{{asset('images/dc-logo.png')}}" alt="Logo DC Comics" />
       <nav>
         <ul>
-          <li><a href="">characters</a></li>
-          <li><a href="">comics</a></li>
+          <li class="{{Route::current()->getName() == 'characters' ? 'active' : null}}"><a href="{{route('characters')}}">characters</a></li>
+          <li class="{{Route::current()->getName() == 'comics' ? 'active' : null}}"><a href="{{route('comics')}}">comics</a></li>
           <li><a href="">movies</a></li>
           <li><a href="">tv</a></li>
           <li><a href="">games</a></li>
